@@ -1,0 +1,102 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* s6r_project_stage_sequence
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-05 14:13+0000\n"
+"PO-Revision-Date: 2024-08-05 14:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type_sequence__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type_sequence__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type_sequence__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type_sequence__fold
+msgid "Folded in Kanban"
+msgstr "Repliée dans la vue Kanban"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type_sequence__id
+msgid "ID"
+msgstr ""
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type_sequence__write_uid
+msgid "Last Updated by"
+msgstr "Mis à jour par"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type_sequence__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type_sequence__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: s6r_project_stage_sequence
+#: model_terms:ir.ui.view,arch_db:s6r_project_stage_sequence.edit_project
+msgid "Ordered Stages"
+msgstr "Étapes ordonnées"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_project__ordered_type_ids
+msgid "Ordered Types"
+msgstr "Étapes ordonnées"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model,name:s6r_project_stage_sequence.model_project_project
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type_sequence__project_id
+msgid "Project"
+msgstr "Projet"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type__project_sequence
+msgid "Project Sequence"
+msgstr "Séquence du projet"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model,name:s6r_project_stage_sequence.model_project_task_type_sequence
+msgid "Project Task Type Sequence"
+msgstr "Séquence de type de tâche de projet"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type_sequence__sequence
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model.fields,field_description:s6r_project_stage_sequence.field_project_task_type_sequence__type_id
+msgid "Stage"
+msgstr "Étape"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model,name:s6r_project_stage_sequence.model_project_task
+msgid "Task"
+msgstr "Tâche"
+
+#. module: s6r_project_stage_sequence
+#: model:ir.model,name:s6r_project_stage_sequence.model_project_task_type
+msgid "Task Stage"
+msgstr "Étape de tâche"
