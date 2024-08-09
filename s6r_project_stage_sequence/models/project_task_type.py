@@ -39,4 +39,3 @@ class ProjectTaskType(models.Model):
             vals.pop('sequence')
         res = super(ProjectTaskType, self).write(vals)
         return res
-
