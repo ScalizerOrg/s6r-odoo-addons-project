@@ -28,6 +28,7 @@ This module allows you to define a sequence of stages for each project.
         'security/ir.model.access.csv',
         'views/project_views.xml',
     ],
+    'post_init_hook': 'compute_ordered_type_ids',
     'auto_install': False,
     'installable': True,
     'application': False,
