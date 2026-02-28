@@ -1,6 +1,7 @@
 # Copyright 2024 Scalizer (<https://www.scalizer.fr>)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0.html).
 from odoo import fields, models, api
+from odoo.api import NewId
 
 
 class ProjectProject(models.Model):
@@ -26,7 +27,7 @@ class ProjectProject(models.Model):
         if self.env.context.get('compute_type_ids'):
             return
         for project in self:
-            if isinstance(project.id, models.NewId):
+            if isinstance(project.id, NewId):
                 continue
             for type_id in project.type_ids:
                 if type_id.ids[0] not in project.ordered_type_ids.type_id.ids:

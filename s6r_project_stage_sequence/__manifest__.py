@@ -2,7 +2,7 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
     'name': 'Scalizer Project Stage Sequence',
-    'version': '18.0.1.0.0',
+    'version': '19.0.1.0.0',
     'author': 'Scalizer',
     'website': 'https://www.scalizer.fr',
     'summary': "Define a sequence for stages of each project",
