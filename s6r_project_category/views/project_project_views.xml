@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Project form -->
+    <record id="view_project_project_form_inherit_category" model="ir.ui.view">
+        <field name="name">project.project.form.inherit.category</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="category_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Project list -->
+    <record id="view_project_project_list_inherit_category" model="ir.ui.view">
+        <field name="name">project.project.list.inherit.category</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='display_name']" position="after">
+                <field name="category_id" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Project search -->
+    <record id="view_project_project_search_inherit_category" model="ir.ui.view">
+        <field name="name">project.project.search.inherit.category</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project_project_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="category_id" string="Project Category"/>
+            </xpath>
+
+            <xpath expr="//group" position="inside">
+                <filter
+                    name="group_by_category_id"
+                    string="Category"
+                    context="{'group_by': 'category_id'}"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
