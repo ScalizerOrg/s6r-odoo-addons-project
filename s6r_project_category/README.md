@@ -1,5 +1,5 @@
 Scalizer Project Category
-========================
+=========================
 
 This module adds a category on projects.It allows users to assign a category to each
 project in order to better organize and analyze projects.
