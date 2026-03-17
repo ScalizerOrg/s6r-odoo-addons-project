@@ -11,4 +11,8 @@ class ProjectProject(models.Model):
         string="Category",
         ondelete="set null",
         index=True,
+        group_expand="_read_group_category_id"
     )
+
+    def _read_group_category_id(self, categories, domain):
+        return self.env["project.category"].search([])
