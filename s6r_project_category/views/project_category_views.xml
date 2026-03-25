@@ -4,7 +4,7 @@
         <field name="name">project.category.list</field>
         <field name="model">project.category</field>
         <field name="arch" type="xml">
-            <list string="Project Categories" editable="bottom">
+            <list string="Project Categories" editable="bottom" default_order="sequence, name">
                 <field name="sequence" widget="handle"/>
                 <field name="name"/>
             </list>
