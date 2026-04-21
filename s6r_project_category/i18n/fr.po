@@ -1,0 +1,93 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* s6r_project_category
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-09 20:40+0000\n"
+"PO-Revision-Date: 2026-03-09 20:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: s6r_project_category
+#: model:ir.model.fields,field_description:s6r_project_category.field_project_category__active
+#: model_terms:ir.ui.view,arch_db:s6r_project_category.view_project_category_search
+msgid "Active"
+msgstr "Actif"
+
+#. module: s6r_project_category
+#: model_terms:ir.ui.view,arch_db:s6r_project_category.view_project_category_search
+msgid "Archived"
+msgstr "Archivé"
+
+#. module: s6r_project_category
+#: model:ir.model.fields,field_description:s6r_project_category.field_project_project__category_id
+#: model_terms:ir.ui.view,arch_db:s6r_project_category.view_project_project_search_inherit_category
+msgid "Category"
+msgstr "Catégorie"
+
+#. module: s6r_project_category
+#: model:ir.model.fields,field_description:s6r_project_category.field_project_category__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: s6r_project_category
+#: model:ir.model.fields,field_description:s6r_project_category.field_project_category__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: s6r_project_category
+#: model:ir.model.fields,field_description:s6r_project_category.field_project_category__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: s6r_project_category
+#: model:ir.model.fields,field_description:s6r_project_category.field_project_category__id
+msgid "ID"
+msgstr "ID"
+
+#. module: s6r_project_category
+#: model:ir.model.fields,field_description:s6r_project_category.field_project_category__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: s6r_project_category
+#: model:ir.model.fields,field_description:s6r_project_category.field_project_category__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: s6r_project_category
+#: model:ir.model.fields,field_description:s6r_project_category.field_project_category__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: s6r_project_category
+#: model:ir.model,name:s6r_project_category.model_project_project
+msgid "Project"
+msgstr "Projet"
+
+#. module: s6r_project_category
+#: model:ir.actions.act_window,name:s6r_project_category.action_project_category
+#: model:ir.ui.menu,name:s6r_project_category.menu_project_category
+#: model_terms:ir.ui.view,arch_db:s6r_project_category.view_project_category_list
+#: model_terms:ir.ui.view,arch_db:s6r_project_category.view_project_category_search
+msgid "Project Categories"
+msgstr "Catégories de projet"
+
+#. module: s6r_project_category
+#: model:ir.model,name:s6r_project_category.model_project_category
+#: model_terms:ir.ui.view,arch_db:s6r_project_category.view_project_category_form
+#: model_terms:ir.ui.view,arch_db:s6r_project_category.view_project_project_search_inherit_category
+msgid "Project Category"
+msgstr "Catégorie de projet"
+
+#. module: s6r_project_category
+#: model:ir.model.fields,field_description:s6r_project_category.field_project_category__sequence
+msgid "Sequence"
+msgstr "Séquence"
