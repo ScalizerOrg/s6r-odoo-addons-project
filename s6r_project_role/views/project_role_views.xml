@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2026 Scalizer (<https://www.scalizer.fr>)
+    License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.html).
+
+    Extend Odoo 19 core project.role views with OCA project_role fields
+    (description, company_id, parent_id) so both sets of views work.
+-->
+<odoo>
+
+    <!-- ============================================================
+         LIST: add description + company after name
+         ============================================================ -->
+    <record id="project_role_view_list_bridge" model="ir.ui.view">
+        <field name="name">project.role.list.bridge</field>
+        <field name="model">project.role</field>
+        <field name="inherit_id" ref="project.project_role_view_list"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="description" optional="show" string="Description"/>
+                <field name="parent_id" optional="hide"/>
+                <field name="company_id" optional="hide" groups="base.group_multi_company"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- ============================================================
+         FORM: add parent_id, company_id, description
+         ============================================================ -->
+    <record id="project_role_view_form_bridge" model="ir.ui.view">
+        <field name="name">project.role.form.bridge</field>
+        <field name="model">project.role</field>
+        <field name="inherit_id" ref="project.project_role_view_form"/>
+        <field name="arch" type="xml">
+            <field name="name" position="before">
+                <field name="parent_id"/>
+            </field>
+            <field name="name" position="after">
+                <field name="company_id" groups="base.group_multi_company"/>
+            </field>
+            <xpath expr="//group[field[@name='name']]" position="after">
+                <group>
+                    <field name="description" placeholder="Full role description..."/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ============================================================
+         KANBAN: show description below name
+         ============================================================ -->
+    <record id="project_role_view_kanban_bridge" model="ir.ui.view">
+        <field name="name">project.role.kanban.bridge</field>
+        <field name="model">project.role</field>
+        <field name="inherit_id" ref="project.project_role_view_kanban"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="description" class="text-muted ms-1"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- ============================================================
+         SEARCH: add company filter
+         ============================================================ -->
+    <record id="project_role_view_search_bridge" model="ir.ui.view">
+        <field name="name">project.role.search.bridge</field>
+        <field name="model">project.role</field>
+        <field name="inherit_id" ref="project.project_role_view_search"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="company_id" groups="base.group_multi_company"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
