@@ -7,8 +7,8 @@ class ProjectTask(models.Model):
     _inherit = 'project.task'
 
     @api.model
-    def _read_group_stage_ids(self, stages, domain, order):
-        stage_ids = super()._read_group_stage_ids(stages, domain, order)
+    def _read_group_stage_ids(self, stages, domain):
+        stage_ids = super()._read_group_stage_ids(stages, domain)
         if self.env.context.get('default_project_id') and len(self.env.context.get('active_ids', [])) == 1:
             stage_ids = stage_ids.sorted(key=lambda x: x.project_sequence)
         return stage_ids
