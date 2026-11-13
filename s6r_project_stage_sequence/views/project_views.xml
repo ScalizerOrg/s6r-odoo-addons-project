@@ -31,12 +31,12 @@
 <!--            <xpath expr="//page[@name='project_stages']" position="after">-->
 <!--                <page name="ordered_stages" string="Ordered Stages">-->
 <!--                    <field name="ordered_type_ids">-->
-<!--                        <tree>-->
+<!--                        <list>-->
 <!--                            <field name="sequence" widget="handle"/>-->
 <!--                            <field name="name"/>-->
 <!--                            <field name="type_id"/>-->
 <!--                            <field name="fold"/>-->
-<!--                        </tree>-->
+<!--                        </list>-->
 <!--                    </field>-->
 <!--                </page>-->
 <!--            </xpath>-->
